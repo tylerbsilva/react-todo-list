@@ -14,8 +14,8 @@ const Home = React.createClass({
         <h1>To Do List</h1>
         <hr />
         <ToDoList {...this.props} />
-        <form onSubmit={this.handleSubmit} ref="itemForm">
-          <input type="text" ref="item" placeholder="item"/>
+        <form onSubmit={this.handleSubmit} className="newItemForm" ref="itemForm">
+          <input type="text" ref="item" className="newItemInput" placeholder="New Item"/>
           <input type="submit" hidden/>
         </form>
       </div>
